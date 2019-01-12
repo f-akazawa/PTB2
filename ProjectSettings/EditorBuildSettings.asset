@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+  - enabled: 0
+    path: Assets/Scenes/DotDemo.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/Demo02.unity
+    guid: fe1c0708b81a54c4e96dddea75709407
+  - enabled: 1
+    path: Assets/Scenes/DrawDot3D_1.unity
+    guid: daed6f69c7a5fab45b08d0a19465388c
   m_configObjects: {}
