@@ -11,13 +11,16 @@ Matlab toolboxの素晴らしいツールであるPTB３のデモをOculus goに
 デモの解説
 ---------------- 
 +   `DotDemo` :
-    DotDemoの移植
+    DotDemoの移植のつもり
  
 +   `Drift` :
-    Driftの移植版
+    Driftの移植のつもり
 
 +   `RandomDots` : 
-    DrawDot3Dの移植版
+    1000個の球をランダム生成して回転運動
+
++   `DrawDot3D_1` :
+    DrawDot3Dの1つ目のデモ移植（オリジナルのソースを解析した版）
 
 随時追加予定  
  
