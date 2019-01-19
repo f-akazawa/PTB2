@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class instantiate_obj : MonoBehaviour
 {
@@ -25,5 +27,10 @@ public class instantiate_obj : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;// フレームでカウント
+
+        if (OVRInput.Get(OVRInput.RawButton.Back)) // バックボタンでendingシーンへ遷移、そこでメディアスキャンしておく
+        {
+            SceneManager.LoadScene("ending", LoadSceneMode.Single);
+        }
     }
 }

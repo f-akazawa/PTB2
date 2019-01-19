@@ -22,33 +22,35 @@ public class random_pos : MonoBehaviour
     {
         this.gameObject.transform.Translate(Random.Range(MinRange,MaxRange),Random.Range(MinRange,MaxRange),Random.Range(MinRange,MaxRange));
 
-        float time = script.time; // タイマーを取得
+        float time = script.time; // タイマーを取得 コピーしたオブジェクトが全部参照してしまうので数が増えると重くなるのでここでは取得しない
+        //int index = script.index; // 同上
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) // トリガー押した判定はここだけにすること（色んな所でやると時間がずれるかも？ということ
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) // トリガー押したとき
         {
-            // トリガー押された
+
+           // トリガー押された
+ 
             index+=1;
             if (index == 3)
             {
                 index = 0;
             }
-            
+
             switch(index)
             {
                 case 0: // blue > yellow
                     this.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
-                    Debug.Log("Time" + time);
                     break;
                 case 1: // yellow > red
                     this.gameObject.GetComponent<Renderer>().material.color = Color.red;
-                    Debug.Log("Time" + time);
                     break;
                 case 2: // red > blue
                     this.gameObject.GetComponent<Renderer>().material.color = Color.blue;
-                    Debug.Log("Time" + time);
                     break;
-            }
             
+            }
         }
+     
     }
 }
