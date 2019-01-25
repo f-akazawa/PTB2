@@ -32,6 +32,7 @@ Matlab toolboxの素晴らしいツールであるPTB３のデモをOculus goに
 ライセンス
 ----------
 Copyright &copy; 2019 University of Electro-Communications Laboratory for Human Informatics.
+
 Distributed under the [MIT License][mit].  
  
 [MIT]: http://www.opensource.org/licenses/mit-license.php  
